@@ -1,0 +1,830 @@
+/* =========================================================
+  OWODE BAPTIST CHURCH - MAIN STYLESHEET
+   ========================================================= */
+
+:root {
+  --green: #08783c;
+  --green-dark: #04572b;
+  --green-soft: #eaf7ef;
+  --gold: #e5ad35;
+  --gold-dark: #bd8512;
+  --ink: #18231d;
+  --muted: #68736d;
+  --white: #ffffff;
+  --cream: #fbfcf8;
+  --border: #e4ebe6;
+  --shadow: 0 18px 50px rgba(11, 47, 28, .10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topbar {
+  background: var(--green-dark);
+  color: #eaf8ef;
+  padding: 8px 0;
+  font-size: .82rem;
+}
+
+.topbar i {
+  color: var(--gold);
+  margin-right: 5px;
+}
+
+.navbar {
+  min-height: 82px;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: var(--green-dark) !important;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  line-height: 1.05;
+  font-size: 1.02rem;
+}
+
+.navbar-brand img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.navbar-brand small {
+  font-family: "DM Sans", sans-serif;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: .72rem;
+}
+
+.nav-link {
+  color: #344139 !important;
+  font-weight: 600;
+  font-size: .92rem;
+  padding: .65rem .75rem !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--green) !important;
+}
+
+.btn-church {
+  background: var(--green);
+  color: white;
+  border-radius: 50px;
+  padding: .65rem 1.15rem;
+  font-weight: 700;
+}
+
+.btn-church:hover {
+  background: var(--green-dark);
+  color: white;
+}
+
+.hero {
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(0, 35, 17, .85), rgba(0, 55, 28, .56), rgba(0, 0, 0, .18)),
+    url("assets/pastors.jpg") center/cover;
+}
+
+.hero-content {
+  color: white;
+  max-width: 760px;
+  padding: 90px 0;
+}
+
+.eyebrow,
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+.eyebrow {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .25);
+  padding: 8px 14px;
+  border-radius: 50px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 7vw, 5.7rem);
+  line-height: .98;
+  margin: 24px 0;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #f2c451;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 1.08rem;
+  color: #edf7f0;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  border-radius: 50px;
+  padding: .85rem 1.4rem;
+  font-weight: 700;
+}
+
+.service-strip {
+  position: relative;
+  margin-top: -52px;
+  z-index: 5;
+}
+
+.service-card {
+  height: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 1.35rem;
+  flex: 0 0 auto;
+}
+
+.service-card small {
+  color: var(--muted);
+}
+
+.service-card h5 {
+  margin: 0;
+  font-weight: 800;
+}
+
+.service-card strong {
+  color: var(--green);
+  font-size: .88rem;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-label {
+  color: var(--green);
+}
+
+.section-label.light {
+  color: #d7f2df;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: clamp(2.2rem, 4vw, 3.35rem);
+  line-height: 1.12;
+  margin: 9px 0 16px;
+}
+
+.lead-text {
+  font-size: 1.12rem;
+  color: #445048;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+.image-stack {
+  position: relative;
+  padding: 0 35px 35px 0;
+}
+
+.main-about-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.image-stack::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 48%;
+  height: 48%;
+  border-radius: 18px;
+  background: var(--green);
+  z-index: -1;
+}
+
+.experience-badge {
+  position: absolute;
+  left: -15px;
+  bottom: 20px;
+  background: var(--gold);
+  color: #332300;
+  padding: 18px 22px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
+}
+
+.experience-badge strong {
+  font-size: 1.7rem;
+  font-family: "Playfair Display", serif;
+}
+
+.experience-badge span {
+  font-size: .75rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.mini-feature {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 0;
+}
+
+.mini-feature>i {
+  color: var(--green);
+  font-size: 1.1rem;
+  margin-top: 3px;
+}
+
+.mini-feature span {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-feature b {
+  font-size: .92rem;
+}
+
+.mini-feature small {
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.verse-section {
+  padding: 90px 0;
+  color: white;
+  background:
+    linear-gradient(rgba(3, 69, 34, .94), rgba(3, 69, 34, .94)),
+    url("assets/obc-logo.jpg") center/cover;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: var(--gold);
+}
+
+.verse {
+  max-width: 920px;
+  margin: 10px auto 15px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  line-height: 1.4;
+}
+
+.verse-section span {
+  color: #c8e6d0;
+  font-weight: 700;
+}
+
+.leader-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 35px rgba(20, 40, 28, .07);
+  height: 100%;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.leader-card img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.leader-info {
+  padding: 22px;
+}
+
+.leader-info span {
+  color: var(--green);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.leader-info h4 {
+  font-family: "Playfair Display", serif;
+  margin: 5px 0;
+}
+
+.leader-info p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.ministry-card {
+  height: 100%;
+  padding: 32px 25px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: white;
+  transition: .3s ease;
+}
+
+.ministry-card:hover {
+  border-color: #b5dcc3;
+  transform: translateY(-7px);
+  box-shadow: var(--shadow);
+}
+
+.ministry-card>i {
+  display: inline-grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  color: var(--green);
+  background: var(--green-soft);
+  font-size: 1.4rem;
+}
+
+.ministry-card h4 {
+  font-family: "Playfair Display", serif;
+  margin: 20px 0 8px;
+}
+
+.ministry-card p {
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.ministry-card a {
+  color: var(--green);
+  font-weight: 800;
+  font-size: .88rem;
+}
+
+.events-section {
+  background: var(--cream);
+}
+
+.event-list {
+  border-top: 1px solid var(--border);
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.date-box {
+  flex: 0 0 76px;
+  width: 76px;
+  height: 76px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--green);
+  color: white;
+}
+
+.date-box strong {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.date-box span {
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.event-content {
+  flex: 1;
+}
+
+.event-content>span {
+  color: var(--green);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.event-content h4 {
+  margin: 3px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.event-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.event-arrow {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-auto-rows: 230px;
+  gap: 14px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 15px;
+  background: #eee;
+}
+
+.gallery-item.large {
+  grid-row: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+.prayer-section {
+  padding: 90px 0;
+  background: var(--green-dark);
+  color: white;
+}
+
+.prayer-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.prayer-section p {
+  color: #cce7d5;
+}
+
+.prayer-form {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .15);
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.prayer-form .form-control {
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 15px;
+}
+
+.prayer-form .btn {
+  border-radius: 10px;
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.form-message {
+  display: none;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .12);
+  color: white;
+  font-size: .9rem;
+}
+
+.contact-card {
+  text-align: center;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 35px 20px;
+}
+
+.contact-card>i {
+  width: 58px;
+  height: 58px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--green);
+  background: var(--green-soft);
+  font-size: 1.4rem;
+}
+
+.contact-card h4 {
+  font-family: "Playfair Display", serif;
+  margin-top: 15px;
+}
+
+.contact-card p {
+  color: var(--muted);
+}
+
+footer {
+  background: #0b1c12;
+  color: #d6e2da;
+  padding: 70px 0 25px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-brand img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-brand h4 {
+  margin: 0;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: #9bb2a3;
+}
+
+.footer-text {
+  max-width: 430px;
+  color: #9bb2a3;
+  margin: 18px 0;
+}
+
+footer h5 {
+  color: white;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+footer>.container>.row a {
+  display: block;
+  color: #9bb2a3;
+  margin-bottom: 8px;
+}
+
+footer>.container>.row a:hover {
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+}
+
+.socials a {
+  width: 38px;
+  height: 38px;
+  display: grid !important;
+  place-items: center;
+  border: 1px solid #30483a;
+  border-radius: 50%;
+  color: white !important;
+  margin: 0 !important;
+}
+
+.socials a:hover {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.service-footer {
+  color: #9bb2a3;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid #20372a;
+  padding-bottom: 8px;
+}
+
+.service-footer strong {
+  color: white;
+}
+
+footer hr {
+  border-color: #20372a;
+  margin: 40px 0 20px;
+}
+
+.copyright {
+  color: #718a7a;
+  font-size: .82rem;
+}
+
+#backToTop {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 45px;
+  height: 45px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #2e2100;
+  box-shadow: var(--shadow);
+  display: none;
+  z-index: 99;
+  font-size: 1.1rem;
+}
+
+#backToTop.show {
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 12px 0;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .service-strip {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .topbar {
+    font-size: .72rem;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    padding: 75px 0;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .main-about-img {
+    height: 380px;
+  }
+
+  .image-stack {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .experience-badge {
+    left: 0;
+    bottom: 5px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 190px;
+  }
+
+  .gallery-item.large {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+
+  .event-item {
+    gap: 15px;
+  }
+
+  .date-box {
+    flex-basis: 65px;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: .88rem;
+  }
+
+  .navbar-brand img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero p {
+    font-size: .96rem;
+  }
+
+  .service-card {
+    padding: 17px;
+  }
+
+  .service-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item.large {
+    grid-column: auto;
+  }
+
+  .event-content p {
+    font-size: .78rem;
+  }
+
+  .event-arrow {
+    display: none;
+  }
+}
